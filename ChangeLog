@@ -1,0 +1,31 @@
+================================================================================
+								U-BOOT CHANGE LOG
+--------------------------------------------------------------------------------
+
+# U-BOOT : 2015-06-10
+
+	- board/falinux/mx6qbtds/mx6qbtds.c
+		--> display disable 
+		--> ecspi3 add
+
+	- board/freescale/imx/ddr/mx6q_4x_mt41j256.cfg
+		--> ecspi3 clock enable
+
+    - include/configs/mx6qbtds.h
+		--> suboot command addtional for u-boot.imx download 
+		--> sfwrite command addtional for u-boot.imx SPI FLASH write
+
+# U-BOOT : 2015-06-12
+
+	- include/configs/mx6qbtds.h 
+		--> SPI FLASH에 부트로더 write 기능 커멘드 변경 (mmc -> tftp)
+
+# U-BOOT : 2015-06-15
+
+	- include/configs/mx6qbtds.h	
+		--> NAND 부팅을 지원하기위한 커멘드 수정
+
+# U-BOOT : 2015-06-14
+
+	- include/configs/mx6qbtds.h	
+		--> SPI FLASH 칩 변경 으로 인한 설정 변경
